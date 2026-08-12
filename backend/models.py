@@ -183,9 +183,11 @@ class ApplicationStatus(models.Model):
             return False
         if self.interview_time is None or self.interviewer is None:
             return False
+        interview_reply_ddl = (timezone.now() + timedelta(hours=24)).replace(hour=23, minute=59, second=59, microsecond=0)
         res = send_email_with_no_reply(self.applicant.email, "SAGA星光·第七期 -- 面试邀请",
                                  compose_interview_email(self.applicant.name, self.handle_by,
-                                                         timezone.localtime(self.interview_time), self.interviewer.meeting_link))
+                                                         timezone.localtime(self.interview_time), self.interviewer.meeting_link,
+                                                         timezone.localtime(interview_reply_ddl)))
         if res:
             self.status = "INTERVIEW_EMAIL_SENT"
             self.save()
@@ -196,8 +198,10 @@ class ApplicationStatus(models.Model):
         if self.status not in ["INTERNAL_ACCEPTED", "INTERNAL_REJECTED"]:
             return False
         if self.status == "INTERNAL_ACCEPTED":
+            offer_reply_ddl = (timezone.now() + timedelta(days=3)).replace(hour=23, minute=59, second=59, microsecond=0)
             res = send_offer_email_with_hr(self.applicant.email, "SAGA星光·第七期 -- 录取通知",
-                                           compose_accept_email(self.applicant.name, self.handle_by))
+                                           compose_accept_email(self.applicant.name, self.handle_by,
+                                                                timezone.localtime(offer_reply_ddl)))
         else:
             res = send_reject_email_with_hr(self.applicant.email, "SAGA星光·第七期 -- 拒绝通知",
                                             compose_reject_email(self.applicant.name, self.handle_by))
