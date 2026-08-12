@@ -8,3 +8,8 @@ static
 
 .DS_Store
 .vscode
+
+# 敏感信息：邮箱密码等，绝不能上传到 GitHub
+.env
+*.env
+!*.env.example

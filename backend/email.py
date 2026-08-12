@@ -718,7 +718,8 @@ def send_interview_email_with_support(to, subject, content) -> bool:
         sender = "support@saga-xingguang.com"
         server = smtplib.SMTP('smtp.feishu.cn', 587)
         server.starttls()
-        server.login(sender, os.environ.get("SAGA_HR_EMAIL_PASSWORD", ""))
+        # support@saga-xingguang.com 与 no-reply 共用同一个密码
+        server.login(sender, os.environ.get("SAGA_NO_REPLY_EMAIL_PASSWORD", ""))
         
         msg = MIMEMultipart("alternative")
         msg["Subject"] = "【SAGA】2024-2025年度志愿者招募面试邀请函"

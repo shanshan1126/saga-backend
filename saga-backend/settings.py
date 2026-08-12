@@ -16,6 +16,15 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# 自动读取项目根目录下的 .env 文件（存放密码等敏感信息，不会上传到 GitHub）
+# 这样本地和服务器都不需要手动在终端里设置环境变量
+try:
+    from dotenv import load_dotenv
+    load_dotenv(BASE_DIR / ".env")
+except ImportError:
+    # 未安装 python-dotenv 时跳过，仍可通过系统环境变量读取
+    pass
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 

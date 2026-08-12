@@ -196,11 +196,11 @@ class ApplicationStatus(models.Model):
         if self.status not in ["INTERNAL_ACCEPTED", "INTERNAL_REJECTED"]:
             return False
         if self.status == "INTERNAL_ACCEPTED":
-            res = send_email_with_HR(self.applicant.email, "SAGA星光·第五期 -- 录取通知",
-                                     compose_accept_email(self.applicant.name, self.handle_by))
+            res = send_offer_email_with_hr(self.applicant.email, "SAGA星光·第五期 -- 录取通知",
+                                           compose_accept_email(self.applicant.name, self.handle_by))
         else:
-            res = send_email_with_HR(self.applicant.email, "SAGA星光·第五期 -- 拒绝通知",
-                                     compose_reject_email(self.applicant.name, self.handle_by))
+            res = send_reject_email_with_hr(self.applicant.email, "SAGA星光·第五期 -- 拒绝通知",
+                                            compose_reject_email(self.applicant.name, self.handle_by))
         if res:
             if self.status == "INTERNAL_ACCEPTED":
                 self.status = "ACCEPTED"
