@@ -169,7 +169,7 @@ class ApplicationStatus(models.Model):
             return False
         self.writing_task_ddl = ApplicationStatus.calculate_ddl()
         self.save()
-        res = send_email_with_no_reply(self.applicant.email, "SAGA星光·第五期 -- 笔试邀请",
+        res = send_email_with_no_reply(self.applicant.email, "SAGA星光·第七期 -- 笔试邀请",
                                  compose_writing_task_email(self.applicant.id, self.applicant.name,
                                                             self.handle_by, timezone.localtime(self.writing_task_ddl)))
         if res:
@@ -183,7 +183,7 @@ class ApplicationStatus(models.Model):
             return False
         if self.interview_time is None or self.interviewer is None:
             return False
-        res = send_email_with_no_reply(self.applicant.email, "SAGA星光·第五期 -- 面试邀请",
+        res = send_email_with_no_reply(self.applicant.email, "SAGA星光·第七期 -- 面试邀请",
                                  compose_interview_email(self.applicant.name, self.handle_by,
                                                          timezone.localtime(self.interview_time), self.interviewer.meeting_link))
         if res:
@@ -196,10 +196,10 @@ class ApplicationStatus(models.Model):
         if self.status not in ["INTERNAL_ACCEPTED", "INTERNAL_REJECTED"]:
             return False
         if self.status == "INTERNAL_ACCEPTED":
-            res = send_offer_email_with_hr(self.applicant.email, "SAGA星光·第五期 -- 录取通知",
+            res = send_offer_email_with_hr(self.applicant.email, "SAGA星光·第七期 -- 录取通知",
                                            compose_accept_email(self.applicant.name, self.handle_by))
         else:
-            res = send_reject_email_with_hr(self.applicant.email, "SAGA星光·第五期 -- 拒绝通知",
+            res = send_reject_email_with_hr(self.applicant.email, "SAGA星光·第七期 -- 拒绝通知",
                                             compose_reject_email(self.applicant.name, self.handle_by))
         if res:
             if self.status == "INTERNAL_ACCEPTED":

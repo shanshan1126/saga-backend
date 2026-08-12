@@ -282,7 +282,7 @@ def compose_writing_task_email(id, name, dept, ddl):
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">SAGA星光·第五期 - 笔试邀请</span>
+            <span class="preheader">SAGA星光·第七期 - 笔试邀请</span>
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
 
               <!-- START MAIN CONTENT AREA -->
@@ -368,7 +368,7 @@ def send_email_with_no_reply(to, subject, content) -> bool:
         server.login(sender, os.environ.get("SAGA_NO_REPLY_EMAIL_PASSWORD", ""))
         
         msg = MIMEMultipart("alternative")
-        msg["Subject"] = "【SAGA】2024-2025年度志愿者招募笔试邀请函"
+        msg["Subject"] = "【SAGA】2026-2027年度志愿者招募笔试邀请函"
         msg["From"] = sender
         msg["To"] = to
         msg["Reply-To"] = "support@saga-xingguang.com"
@@ -616,7 +616,7 @@ def compose_interview_email(id, name, dept, time,link):
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">SAGA星光·第五期 - 面试邀请</span>
+            <span class="preheader">SAGA星光·第七期 - 面试邀请</span>
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
 
               <!-- START MAIN CONTENT AREA -->
@@ -722,7 +722,7 @@ def send_interview_email_with_support(to, subject, content) -> bool:
         server.login(sender, os.environ.get("SAGA_NO_REPLY_EMAIL_PASSWORD", ""))
         
         msg = MIMEMultipart("alternative")
-        msg["Subject"] = "【SAGA】2024-2025年度志愿者招募面试邀请函"
+        msg["Subject"] = "【SAGA】2026-2027年度志愿者招募面试邀请函"
         msg["From"] = sender
         msg["To"] = to
         msg["Reply-To"] = "support@saga-xingguang.com"
@@ -970,7 +970,7 @@ def compose_accept_email(id, name, dept, offer_reply_ddl):
         <td>&nbsp;</td>
         <td class="container">
           <div class="content">
-            <span class="preheader">SAGA星光·第五期 - 录取通知</span>
+            <span class="preheader">SAGA星光·第七期 - 录取通知</span>
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
 
               <!-- START MAIN CONTENT AREA -->
@@ -1072,7 +1072,7 @@ def send_offer_email_with_hr(to, subject, content) -> bool:
         server.login(sender, os.environ.get("SAGA_HR_EMAIL_PASSWORD", ""))
         
         msg = MIMEMultipart("alternative")
-        msg["Subject"] = "【SAGA】2024-2025年度志愿者招募结果"
+        msg["Subject"] = "【SAGA】2026-2027年度志愿者招募结果"
         msg["From"] = sender
         msg["To"] = to
         msg["Reply-To"] = "human-resource@saga-xingguang.com"
@@ -1312,7 +1312,7 @@ def compose_reject_email(id, name, dept):
           <div class="content">
 
             <!-- START CENTERED WHITE CONTAINER -->
-            <span class="preheader">SAGA星光·第五期 - 录取通知</span>
+            <span class="preheader">SAGA星光·第七期 - 录取通知</span>
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
 
               <!-- START MAIN CONTENT AREA -->
@@ -1410,7 +1410,7 @@ def send_reject_email_with_hr(to, subject, content) -> bool:
         server.login(sender, os.environ.get("SAGA_HR_EMAIL_PASSWORD", ""))
         
         msg = MIMEMultipart("alternative")
-        msg["Subject"] = "【SAGA】2024-2025年度志愿者招募结果"
+        msg["Subject"] = "【SAGA】2026-2027年度志愿者招募结果"
         msg["From"] = sender
         msg["To"] = to
         msg["Reply-To"] = "human-resource@saga-xingguang.com"
