@@ -12,13 +12,13 @@ code_to_dept = {
     "LIA": "外联部",
 }
 dept_to_file_url = {
-    "TUT": "https://lcny1jsoyn29.feishu.cn/drive/folder/FOIXfXVUilAe0LdlLiWcpMRAnHB",
-    "CM": "https://lcny1jsoyn29.feishu.cn/drive/folder/BCNefGzEMlvmmsdy2rucbo9ynIh",
-    "IT": "https://lcny1jsoyn29.feishu.cn/drive/folder/Fp0bfAOvOlPuQJdObPnc4iiWnih",
-    "HR": "https://lcny1jsoyn29.feishu.cn/drive/folder/Pgisffl4ClzunkdWLJIc7xeDnSe",
-    "PR": "https://lcny1jsoyn29.feishu.cn/drive/folder/VTxGf4cj9lsRo2dnAYTcaKkFniA",
-    "FAL": "https://lcny1jsoyn29.feishu.cn/drive/folder/UwbCfDBFolKepHdWJY0couAfnQh",
-    "LIA": "https://lcny1jsoyn29.feishu.cn/drive/folder/S6dtfSEmxlNl1edqe93czW4Hn14",
+    "TUT": "https://ocnyv1i0da7e.feishu.cn/drive/folder/Kti8f9Vf9l8myHdXkh6cSgEInwh",
+    "CM": "https://ocnyv1i0da7e.feishu.cn/drive/folder/FfTpfOgmXl4rJddLx2scpplenSd",
+    "IT": "https://ocnyv1i0da7e.feishu.cn/drive/folder/YDfNfSyY5lEHSZd6l2YcLlBFnpd",
+    "HR": "https://ocnyv1i0da7e.feishu.cn/drive/folder/QPiOfbVTXlAWhUd2mmQcPzOynih",
+    "PR": "https://ocnyv1i0da7e.feishu.cn/drive/folder/AqeVfizcLlr8ROdOc5KcBwAPnjb",
+    "FAL": "https://ocnyv1i0da7e.feishu.cn/drive/folder/IFRKfG0lWl4lIHdyqiAcnlrsnfd",
+    "LIA": "https://ocnyv1i0da7e.feishu.cn/drive/folder/CTNLf0VDUlM2IOdUMYvc0ycVnFf",
 }
 dept_to_eng = {
     "TUT": "Teaching",
