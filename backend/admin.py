@@ -98,7 +98,7 @@ class ApplicantAdmin(ModelAdmin):
         return qs.filter(query)
     
 class ApplicationStatusAdmin(ModelAdmin):
-    search_fields = ('applicant', )
+    search_fields = ('applicant__name', 'applicant__email', 'handle_by')
     list_display = ('applicant','status', 'interview_time', 'writiing_task_score', 'avgInterviewScore', 'totalScore', 'handle_by',)
     list_filter = ('handle_by', 'status')
     readonly_fields = ["writing_task_file", "writing_task_video_link"]
