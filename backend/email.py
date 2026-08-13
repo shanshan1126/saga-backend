@@ -596,13 +596,6 @@ def compose_interview_email(name, dept, time, link, interview_reply_time_ddl):
         width: 100%;
       height: auto;
     }}
-   .pic-QR{{       display: flex;
-        justify-content: center;
-        align-items: center;
-   }}
-    .pic-QR img {{      
-        width: 50%;
-    }}
     </style>
   </head>
   <body>
@@ -643,11 +636,8 @@ def compose_interview_email(name, dept, time, link, interview_reply_time_ddl):
                     <li>请确保您的网络连接良好，摄像头及麦克风工作正常。</li>
                     <li>为保证面试的公正，所有面试将被录制并存档，以备查阅。</li>
                     <li>面试内容包括对个人信息、报名岗位的提问，并与笔试内容相关，群体面试会增设小组讨论环节。</li>
-                    <li>您可以提前浏览SAGA公众号进行更多了解。（下附二维码）</li>
+                    <li>您可以提前浏览SAGA公众号进行更多了解。</li>
                   </ul>
-                  <div class="pic-QR">
-                    <img src="http://saga-xingguang.com/static/public/imgs/qrCode.jpg" alt="微信公众号二维码">
-                  </div>
 
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" >
                     <tbody>
@@ -949,14 +939,6 @@ def compose_accept_email(name, dept, offer_reply_ddl):
    .pic-top img {{      
         width: 100%;
       height: auto;
-    }}
-   
-    .pic-QR{{    display: flex;
-        justify-content: center;
-        align-items: center;
-   }}
-    .pic-QR img {{     
-        width: 90%;
     }}
 
     </style>
