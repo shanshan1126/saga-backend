@@ -963,7 +963,7 @@ def compose_accept_email(name, dept, offer_reply_ddl):
                   <p>感谢您参加志行会星光线上课堂项目组的招募，鉴于您对公益的热情与您在面试中出众的表现，星光项目组诚挚邀请您成为我们的一员，与所有BTPer一起为我们共同的公益梦想努力。</p> 
                   
                   <p>您的具体职位是<span style="font-weight: bold;">{code_to_dept[dept]}成员</span>。</p>
-                  <p>请扫描<a href="https://lcny1jsoyn29.feishu.cn/wiki/E0BmwziX0inqrPkrjjYc5JvjnXc">此链接</a>中的二维码，加入到SAGA的飞书团队及微信群，SAGA所有数据都储存在飞书内，主要工作也将在飞书开展，<span class="highlight">请务必保证加入以免消息遗漏</span>。</p>
+                  <p>请扫描<a href="https://ocnyv1i0da7e.feishu.cn/wiki/SYOAw9MsFi79SckqdLwcjgf4nhe">此链接</a>中的二维码，加入到SAGA的飞书团队及微信群，SAGA所有数据都储存在飞书内，主要工作也将在飞书开展，<span class="highlight">请务必保证加入以免消息遗漏</span>。</p>
     
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" >
                     <tbody>
@@ -991,7 +991,7 @@ def compose_accept_email(name, dept, offer_reply_ddl):
                   <p>Thank you for participating in the recruitment of BTP-SAGA. Due to your enthusiasm for public welfare and outstanding performance during the interview, we are glad to offer you as a member of BTP-SAGA. We hope that you can strive after our mutual public welfare dreams with all BTPers!</p>
                   <p>Your position is a member of <span style="font-weight: bold;">{code_to_dept[dept]} Department</span></p> 
                   
-                  <p>Please scan the <a href="https://lcny1jsoyn29.feishu.cn/wiki/E0BmwziX0inqrPkrjjYc5JvjnXc">QR codes</a> to enter our Lark Team and WeChat group. All documents of BTP-SAGA are saved in Lark for your reference, and we will carry out our main tasks through it as well. Please join them once you decide to accept the offer. </p>
+                  <p>Please scan the <a href="https://ocnyv1i0da7e.feishu.cn/wiki/SYOAw9MsFi79SckqdLwcjgf4nhe">QR codes</a> to enter our Lark Team and WeChat group. All documents of BTP-SAGA are saved in Lark for your reference, and we will carry out our main tasks through it as well. Please join them once you decide to accept the offer. </p>
                   <p>Please reply to this email as soon as possible to confirm your acceptance. After you accept the offer, we will notify you through Lark for further arrangement. Kindly note that if we do not receive your reply before <span class="highlight-thin">{offer_reply_ddl}</span>, we will assume that you have automatically given up the position.</p>
 
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" >
